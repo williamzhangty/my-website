@@ -1,1 +1,460 @@
 @charset "utf-8";
+:root {
+    --app-detail-banner-height: 120px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline:none;
+    border-style: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+html,body {
+    height: 100%;
+}
+body {
+    font-family: "Nunito Sans","Open Sans", Arial, sans-serif;
+    background-color: #f7f7f7;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-inline: auto;
+}
+
+.container{
+    width: min(100% - 60px, 1080px);
+    margin-inline: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(149, 143, 143); 
+}
+
+a:visited {
+    color: black;
+}
+
+h1,a, span {
+    letter-spacing: 0.3px;
+}
+
+.hero {
+    position: relative;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../img/hero.webp') center center / cover no-repeat;
+}
+
+.hero::after {
+    position: absolute;
+    inset: 0 auto auto 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0.4);
+    z-index: -2;
+}
+
+main .center {
+    height: 650px;
+    display: grid;
+   margin-top: 150px;
+}
+
+.tail {
+    background-color: #eaeaea;
+    height: 700px;
+}
+
+main .center div {
+    text-align: center;
+}
+
+main h1 {
+    font-size: 58px;
+    color: #fff;
+    line-height: 68px;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    line-height: 1.8rem;
+}
+
+.text-1 {
+    font-size: 16px;
+    color: #32302f;
+    margin-bottom: 3rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.text-2 {
+    font-size: 20px;
+    color: #32302f;
+    margin-bottom: 5rem;
+    margin-left: 2em;
+    margin-right: 2rem;
+    line-height: 1.8rem;
+}
+
+.text-3 {
+    font-size: 20px;
+    color: #32302f;
+    margin-bottom: 5rem;
+    line-height: 1.8rem;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+main h2 {
+    font-size: 40px;
+    margin: 10px 30px 30px 30px;
+}
+
+.contact h2 {
+    padding-top: 30px;
+}
+
+main section div {
+    margin-top: 10px;
+}
+
+main div > a {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #f5f5f5;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: #3333ff;
+    border-radius: 5px;
+    padding: 15px 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+main div > a:hover{
+    background-color: #4d4dff;
+    color:#fff;
+}
+
+main div > a:visited{
+    color:#fff;
+}
+
+section {
+    text-align: center;
+}
+
+main .container-1 {
+    width: min(100% - 30px,880px);
+    margin-inline: auto;
+    margin-bottom: 100px;
+}
+
+main .container {
+    width: min(100% - 30px,1080px);
+    margin-inline: auto;
+    margin-bottom: 100px;
+}
+
+/* using 'flex-wrap will allow your child elements to wrap additional lines when they no longer fiton
+the initial line*/
+.row {
+    margin-top:60px;
+    display:flex;
+    flex-wrap: Wrap;
+    gap:20px;
+    text-align: center;
+}
+
+.column-1 {
+    flex: 1 0 auto;
+    min-width: calc(50% - 10px);
+    height: 350px;
+    border-radius: 5px;
+}
+
+.one-1 {
+   
+    height: 350px;
+    width: 200px;
+    background: url('../img/hawii.jpeg') no-repeat center center / cover;
+        border-radius: 5px;
+}
+
+.two-1 {
+ 
+    width: min(100% - 10px,300px);
+}
+
+@media screen and (max-width:768px){
+   .column-1{
+       width: 100%;
+   }
+}
+
+/*
+using 'flex-wrap' will allow your child elements to wrap addtional
+lines when they no longer fit on the initial line
+*/
+
+.column {
+    flex: 1 0 auto;
+    width: calc(25% - 20px);
+    height: 370px;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 0.1);
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.column:hover {
+    box-shadow: 3px 3px 5px rgb(0 0 0 / 0.1);
+    transform: scale(1.02);
+}
+
+.pic-1 {
+    background-color: white;
+    background: url('../img/Africa.jpg') no-repeat center center / cover;
+
+    height: 240px;
+}
+
+.pic-2 {
+    background-color: white;
+    background: url('../img/Europe.jpg') no-repeat center center / cover;
+    height: 240px;
+}
+
+.pic-3 {
+    background-color: white;
+    background: url('../img/Asia.jpg') no-repeat center center / cover;
+    height: 240px;
+}
+
+.pic-4 {
+    background-color: white;
+    background: url('../img/America.jpg') no-repeat center center / cover;
+    height: 240px;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .column {
+        width: 100%;
+    }
+}
+
+main span {
+    font-size: 27px;
+}
+
+.contact {
+    text-align: center;
+}
+
+/* header and footer CSS*/
+
+/* header begins */
+.header-div {
+    display: flex;
+    height: 60px;
+    vertical-align: middle;
+}
+
+.header-div h1 {
+    font-size: 44px;
+    padding-left: 10px;
+    line-height: 60px;
+    font-family: 'Fuggles', cursive;
+    font-weight: 600;
+}
+
+.nav-div{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.user-icon{
+    margin-left: 50px;
+    float: right;
+}
+
+.user-icon i{
+    color: black;
+}
+
+.header-icon {
+    display: flex;
+}
+
+.header-div i {
+    line-height: 60px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.menu {
+    display: none;
+    margin-right: 10px;
+    justify-content: space-between;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 10; /* Adjust as needed */
+}
+
+.navSpan {
+    line-height: 60px;
+    position: relative;
+    top: 3px;
+    padding: 10px;
+
+}
+
+.navSpan a {
+    font-size: 18px;
+    color: black;
+}
+
+a:hover {
+    color:rgb(149, 143, 143);
+    
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    flex-wrap: wrap;
+    top: 45px;
+    right: 10px;
+}
+
+.sub-menu span {
+    width: 100%;
+    text-align:left;
+    line-height: 50px;
+    padding-left: 10px;
+    color: black;
+    background-color:#e9f2f9;
+}
+
+.sub-menu span:hover {
+    background-color: #d4e6f4;
+}
+
+#menu-icon i {
+    line-height: 60px;
+}
+
+#menu-icon:hover .sub-menu {
+        display: flex;
+}
+
+@media screen and (max-width:768px) {
+    .header-div span {
+        display: none;
+    }
+
+    .menu span {
+        display: block;
+    }
+
+    header .menu {
+        display: flex;
+    }
+}
+/* header ends */
+
+/* footer begins */
+footer {
+    height: 60px;
+    background-color: #e2e2e5;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+
+.footer-nav > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    height: 40px;
+    padding: 5px;
+}
+
+.footer-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav i{
+    color: black;
+}
+
+.footer-icon {
+    height: 30px;
+    width: 30px;
+    background-color: #eaf1f3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2px 5px;
+}
+
+.authors-div {
+    width: 420px;
+    justify-content: flex-end;
+    display: flex;
+    color: grey;
+}
+
+.authors-div span {
+    line-height: 60px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+
+/* footer ends */
