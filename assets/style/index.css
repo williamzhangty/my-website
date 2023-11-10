@@ -336,7 +336,12 @@ main span {
 
 .navSpan a {
     font-size: 18px;
-    color: black;
+    color: #fff;
+}
+
+Span a {
+    font-size: 18px;
+    color: #000;
 }
 
 a:hover {
@@ -348,18 +353,18 @@ a:hover {
     display: none;
     position: absolute;
     height: 120px;
-    width: 120px;
+    width: 150px;
     flex-wrap: wrap;
-    top: 45px;
-    right: 10px;
+    top: 58px;
+    right: 0px;
+    opacity: 0.5; 
 }
 
 .sub-menu span {
     width: 100%;
     text-align:left;
-    line-height: 50px;
     padding-left: 10px;
-    color: black;
+   
     background-color:#e9f2f9;
 }
 
@@ -369,6 +374,7 @@ a:hover {
 
 #menu-icon i {
     line-height: 60px;
+    color:#a6a6a6;
 }
 
 #menu-icon:hover .sub-menu {
@@ -429,7 +435,7 @@ footer .container {
 }
 
 .footer-nav i{
-    color: black;
+    color: #fff;
 }
 
 .footer-icon {
