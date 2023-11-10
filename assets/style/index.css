@@ -49,7 +49,8 @@ h1,a, span {
     position: relative;
     background: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../img/hero.webp') center center / cover no-repeat;
+        url('../img/ezgif.com-gif-maker.gif') center center / cover no-repeat;
+        backdrop-filter: blur(100px);
 }
 
 .hero::after {
