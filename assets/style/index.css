@@ -399,7 +399,7 @@ a:hover {
 /* footer begins */
 footer {
     height: 60px;
-    background-color: #e2e2e5;
+    background-color: #eaeaea;
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -415,7 +415,7 @@ footer .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
+    font-size: 20px;
 }
 
 
@@ -439,9 +439,9 @@ footer .container {
 }
 
 .footer-icon {
-    height: 30px;
-    width: 30px;
-    background-color: #eaf1f3;
+    height: 35px;
+    width: 35px;
+    background-color: #a6a6a6;
     border-radius: 50%;
     display: flex;
     justify-content: center;
